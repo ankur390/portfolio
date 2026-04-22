@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  
+  <!-- LEFT: FORM -->
+  <div class="form">
+    <h2>Fill Details</h2>
+
+    <input id="name" placeholder="Your Name">
+    <input id="email" placeholder="Email">
+    <input id="phone" placeholder="Phone">
+    <textarea id="skills" placeholder="Skills"></textarea>
+    <textarea id="education" placeholder="Education"></textarea>
+
+    <button onclick="generateResume()">Generate</button>
+    <button onclick="downloadPDF()">Download PDF</button>
+  </div>
+
+  <!-- RIGHT: PREVIEW -->
+  <div class="preview" id="resume">
+    <h1 id="r-name">Your Name</h1>
+    <p id="r-email">Email</p>
+    <p id="r-phone">Phone</p>
+
+    <h3>Skills</h3>
+    <p id="r-skills"></p>
+
+    <h3>Education</h3>
+    <p id="r-education"></p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<!-- PDF LIBRARY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</body>
+</html>
